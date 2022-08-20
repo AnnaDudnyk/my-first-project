@@ -1,0 +1,126 @@
+body {
+  padding: 60px;
+  background: linear-gradient(
+    359.3deg,
+    rgb(196, 214, 252) 1%,
+    rgba(187, 187, 187, 0) 70.9%
+  );
+}
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+}
+h1 {
+  font-size: 18px;
+}
+h2 {
+  font-size: 100px;
+}
+form {
+  margin-bottom: 60px;
+}
+p {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  color: #65636370;
+}
+ul {
+  padding: 0;
+  padding-top: 15px;
+}
+li span {
+  flex-basis: 33.333%;
+  text-align: right;
+}
+li span:first-of-type {
+  text-align: left;
+}
+li span:last-of-type {
+  text-align: right;
+  font-size: 25px;
+}
+.row {
+  height: 100%;
+}
+.col-8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 60px 10px 60px;
+}
+.container {
+  height: calc(100vh - 120px);
+  background: #a0cae0;
+  border-radius: 20px;
+  background: linear-gradient(165deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+}
+
+.degree-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.col-4 {
+  padding-top: 40px;
+  background: #12486961;
+  border-radius: 20px;
+}
+
+.card-background {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background: white;
+  border-radius: 15px;
+  justify-content: space-around;
+  margin-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px,
+    rgb(0 0 0 / 30%) 0px 30px 60px -30px,
+    rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+}
+.field {
+  border-radius: 20px;
+  width: 55%;
+  height: 42px;
+  border: none;
+  padding: 20px;
+  box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 1px,
+    rgb(209 213 219) 0px 0px 0px 1px inset;
+}
+.current-button {
+  height: 42px;
+  width: 100px;
+  box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 1px,
+    rgb(209 213 219) 0px 0px 0px 1px inset;
+  border-color: #12486961;
+  border: thin;
+  border-radius: 20px;
+}
+.search-button {
+  height: 42px;
+  width: 100px;
+  box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 1px,
+    rgb(209 213 219) 0px 0px 0px 1px inset;
+  border: thin;
+  border-radius: 20px;
+}
+.next-days-button {
+  height: 42px;
+  width: 100px;
+  box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 1px,
+    rgb(209 213 219) 0px 0px 0px 1px inset;
+  border: thin;
+  border-radius: 20px;
+}
+.next-days-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}

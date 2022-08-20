@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h1>the.weather</h1>
+          <section class="main-degree-display">
+            <div class="degree-wrapper">
+              <h2 class="degree" id="current-degree">18°</h2>
+              <div class="location-wrapper">
+                <h3 class="city" id="current-city">Kyiv</h3>
+                <h4 class="time" id="current-time">17:11 - Sunday, 26 June</h4>
+              </div>
+            </div>
+            <form id="search-form">
+              <input
+                class="field"
+                type="text"
+                placeholder="Enter a City"
+                id="city-input"
+              />
+              <input class="search-button" type="submit" value="Search" />
+              <input class="current-button" type="button" value="Current" />
+            </form>
+            <footer>
+              <p>Created by Anna Dudnyk</p>
+            </footer>
+          </section>
+        </div>
+
+        <div class="col-4">
+          <h4>27 June - 3 July</h4>
+          <ul>
+            <li class="card-background">
+              <span>Monday</span>
+              <span>18°/11°</span>
+              <span>⛅️</span>
+            </li>
+            <li class="card-background">
+              <span>Tuesday</span>
+              <span>14°/9°</span>
+              <span>☀️</span>
+            </li>
+            <li class="card-background">
+              <span>Wednesday</span>
+              <span>11°/7°</span>
+              <span>☀️</span>
+            </li>
+            <li class="card-background">
+              <span>Thursday</span>
+              <span>10°/6°</span>
+              <span>☁️</span>
+            </li>
+            <li class="card-background">
+              <span>Friday</span>
+              <span>8°/5°</span>
+              <span>☁️</span>
+            </li>
+            <li class="card-background">
+              <span>Saturday</span>
+              <span>10°/8°</span>
+              <span>🌦</span>
+            </li>
+            <li class="card-background">
+              <span>Sunday</span>
+              <span>19°/11°</span>
+              <span>☀️</span>
+            </li>
+          </ul>
+          <div class="next-days-wrapper">
+            <button class="next-days-button">Next Days</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
