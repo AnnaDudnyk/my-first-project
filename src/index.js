@@ -51,29 +51,9 @@ function formatDate(date) {
   return `${date.getHours()}:${date.getMinutes()} - ${day}, ${date.getDate()} ${month}`;
 }
 
-//let cities = ["Paris", "Tokyo", "Lisbon", "San Francisco", "Oslo"];
 function titleCase(name) {
   return name.charAt(0).toUpperCase() + name.slice(1);
 }
-// console.log(weather);
-// let city = prompt("Enter a city").toLowerCase().trim();
-// if (
-//   city === "paris" ||
-//   city === "tokyo" ||
-//   city === "lisbon" ||
-//   city === "san Francisco" ||
-//   city === "oslo"
-// ) {
-//   alert(
-//     `It is currently ${Math.floor(weather[city].temp)}°C (66°F) in ${titleCase(
-//       city
-//     )} with a humidity of ${weather[city].humidity}%`
-//   );
-// } else {
-//   alert(
-//     `Sorry, we don't know the weather for this city, try going to https://www.google.com/search?q=weather+sydney`
-//   );
-// }
 
 let timeSelector = document.querySelector("#current-time");
 
@@ -90,6 +70,15 @@ function showTemp(response) {
   let temp = Math.round(response.data.main.temp);
   let currentDegree = document.querySelector("#current-degree");
   currentDegree.innerHTML = `${temp}°`;
+  let currentHumidity = document.querySelector("#current-humidity");
+  currentHumidity.innerHTML = response.data.main.humidity;
+  let currentWind = document.querySelector("#current-wind");
+  currentWind.innerHTML = Math.round(response.data.wind.speed);
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 searchForm.addEventListener("submit", function (event) {
