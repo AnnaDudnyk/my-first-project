@@ -11,12 +11,27 @@ h2,
 h3,
 h4 {
   color: white;
+  margin-top: 10px;
 }
 h1 {
   font-size: 18px;
 }
 h2 {
-  font-size: 100px;
+  font-size: 140px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+  width: 45px;
+  height: 40px;
+  margin-left: 0;
 }
 form {
   margin-bottom: 60px;
@@ -63,6 +78,13 @@ li span:last-of-type {
   flex-direction: row;
   align-items: center;
   margin-bottom: 20px;
+}
+.location-wrapper {
+  margin-left: 15px;
+}
+.condition-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 .col-4 {
   padding-top: 40px;
