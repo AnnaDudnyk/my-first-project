@@ -129,19 +129,11 @@ li span:last-of-type {
 .search-button {
   height: 42px;
   width: 100px;
-  box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 1px,
-    rgb(209 213 219) 0px 0px 0px 1px inset;
+  box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 1px, #007bffc4 0px 0px 0px 1px inset;
   border: thin;
   border-radius: 20px;
 }
-.next-days-button {
-  height: 42px;
-  width: 100px;
-  box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 1px,
-    rgb(209 213 219) 0px 0px 0px 1px inset;
-  border: thin;
-  border-radius: 20px;
-}
+
 .next-days-wrapper {
   display: flex;
   justify-content: flex-end;

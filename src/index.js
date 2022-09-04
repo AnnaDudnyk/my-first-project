@@ -155,6 +155,7 @@ searchForm.addEventListener("submit", function (event) {
   if (cityInput && cityInput.value) {
     processWeather(cityInput.value);
   }
+  cityInput.value = ``;
 });
 
 document.addEventListener("DOMContentLoaded", function (event) {
