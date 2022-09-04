@@ -115,9 +115,7 @@ function processForecast(coordinates) {
 }
 
 function showTemp(response) {
-  if (cityInput && cityInput.value) {
-    currentCity.innerHTML = titleCase(cityInput.value);
-  }
+  currentCity.innerHTML = titleCase(response.data.name);
   let temp = Math.round(response.data.main.temp);
   let currentDegree = document.querySelector("#current-degree");
   currentDegree.innerHTML = `${temp}°`;
@@ -138,6 +136,19 @@ function processWeather(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric`;
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemp);
 }
+
+function searchLocation(position) {
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemp);
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
+let currentLocationButton = document.querySelector("#current-location-button");
+currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchForm.addEventListener("submit", function (event) {
   event.preventDefault();
