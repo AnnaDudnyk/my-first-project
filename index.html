@@ -19,6 +19,13 @@
       <div class="row">
         <div class="col-8">
           <h1>the.weather</h1>
+          <!-- <div class="switch-button">
+            <input class="switch-button-checkbox" type="checkbox" />
+            <label class="switch-button-label" for=""
+              ><span class="switch-button-label-span">Photo</span></label
+            >
+          </div> -->
+
           <section class="main-degree-display">
             <div class="degree-wrapper">
               <h2 class="degree" id="current-degree">18°</h2>
@@ -59,51 +66,13 @@
           </section>
         </div>
 
-        <div class="col-4">
-          <h4>27 June - 3 July</h4>
-          <ul>
-            <li class="card-background">
-              <span>Monday</span>
-              <span>18°/11°</span>
-              <span>⛅️</span>
-            </li>
-            <li class="card-background">
-              <span>Tuesday</span>
-              <span>14°/9°</span>
-              <span>☀️</span>
-            </li>
-            <li class="card-background">
-              <span>Wednesday</span>
-              <span>11°/7°</span>
-              <span>☀️</span>
-            </li>
-            <li class="card-background">
-              <span>Thursday</span>
-              <span>10°/6°</span>
-              <span>☁️</span>
-            </li>
-            <li class="card-background">
-              <span>Friday</span>
-              <span>8°/5°</span>
-              <span>☁️</span>
-            </li>
-            <li class="card-background">
-              <span>Saturday</span>
-              <span>10°/8°</span>
-              <span>🌦</span>
-            </li>
-            <li class="card-background">
-              <span>Sunday</span>
-              <span>19°/11°</span>
-              <span>☀️</span>
-            </li>
-          </ul>
-          <div class="next-days-wrapper">
-            <button class="next-days-button">Next Days</button>
-          </div>
+        <div class="col-4" id="forecast-container">
+          <h4 id="forecast-interval"></h4>
+          <ul class="forecast" id="forecasts-items"></ul>
         </div>
       </div>
     </div>
+
     <script src="src/index.js"></script>
   </body>
 </html>
